@@ -1,12 +1,12 @@
 {
     "token": "",
     "language": "en",
-    "prefix": "!",
+    "prefix": "-",
     "mongodbUri": "",
     "excessCommands": {
         "utility": true,
         "other": true,
-        "hentai": true,
+        "hentai": false,
         "troll": true,
         "levelling" : true,
         "lavalink" : true,
@@ -18,7 +18,7 @@
         "report" : true
     },
     "categories": {
-        "anime": true,
+        "anime": false,
         "basic": true,
         "utility": true,
         "moderation": true,
@@ -30,10 +30,10 @@
     },
      "lavalink": {
         "lavalink": {
-            "identifier": "INZEWORLD.COM (DE)",
-            "password": "saher.inzeworld.com",
-            "host": "lava.inzeworld.com",
-            "port": 3128,
+            "identifier": "VtubeYt",
+            "password": "technical",
+            "host": "180.188.226.76",
+            "port": 10852,
             "secure": false
           }
     }, 
