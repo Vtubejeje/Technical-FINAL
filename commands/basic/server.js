@@ -82,7 +82,7 @@ module.exports = {
                         .setAuthor({ name: 'Server Info', iconURL: server.iconURL({ dynamic: true }) })
                         .setThumbnail(server.iconURL({ dynamic: true, size: 1024 }))
                         .addFields([
-                            { name: '📛 Server Name', value: `\`${server.name}\``, inline: true },
+                            { name: '⭐ Server Name', value: `\`${server.name}\``, inline: true },
                             { name: '👑 Owner', value: `<@${owner.id}>`, inline: true },
                             { name: '🆔 Server ID', value: `\`${server.id}\``, inline: true },
                             { name: '👥 Members', value: `\`${server.memberCount}\``, inline: true },
@@ -100,12 +100,12 @@ module.exports = {
                     new EmbedBuilder()
                         .setColor('#FFFFFF')
                         .setTitle('🎭 Roles')
-                        .setDescription(roles.size > 0 ? roles.map(role => `<@&${role.id}>`).join(', ') : 'No roles available.'),
+                        .setDescription(roles.size > 0 ? roles.map(role => `<@&${role.id}>`).join(', ') : 'Seems like there is no roles.'),
 
                     new EmbedBuilder()
                         .setColor('#FFFFFF')
                         .setTitle('😀 Emojis')
-                        .setDescription(emojis.size > 0 ? emojis.map(e => e.toString()).join(' ') : 'No emojis available.'),
+                        .setDescription(emojis.size > 0 ? emojis.map(e => e.toString()).join(' ') : 'Seems like there is no emojis.'),
                 ];
 
                 // **Pagination Buttons**
