@@ -34,7 +34,7 @@ module.exports = {
     async execute(interaction) {
         if (interaction.isCommand && interaction.isCommand()) {
         
-            const BOT_ICON = "https://cdn.discordapp.com/emojis/1334648756649590805.png";
+            const BOT_ICON = "https://cdn.discordapp.com/attachments/1312048681201172573/1345312511347523697/technical_logo.jpeg";
             const EMBED_COLOR = "#3498db";
             const COMMANDS_DIR = path.join(__dirname, '../../commands');
             const EXCESS_COMMANDS_DIR = path.join(__dirname, '../../excesscommands');
@@ -123,18 +123,18 @@ module.exports = {
                 const totalCount = masterCount + subCount + prefixCount;
                 // Info Page
                 pages.push({
-                    title: 'Bot Information',
+                    title: 'Technical Info',
                     description: [
-                        `- **Developer:** GlaceYT`,
-                        `- **Version:** 1.2.1`,
-                        `- **Commands Loaded:** ${totalCommandsLoaded}`,
-                        `- **Master Commands:** ${masterCount}`,
+                        `- **Dev:** Vtube.satoru`,
+                        `- **Released on:** 5.3.2025`,
+                        `- **Commands Included:** ${totalCommandsLoaded}`,
+                        `- **Dev Commands:** ${masterCount}`,
                         `- **Sub Commands:** ${subCount}`,
                         `- **Total Commands:** ${totalCount}`,
                         `- **Categories Enabled:** ${getEnabledCategories(config.categories).join(', ')}`,
                         `- **Prefix Commands:** ${Object.values(config.excessCommands).some(v => v) ? 'Enabled' : 'Disabled'}`
                     ].join('\n'),
-                    author: { name: 'All In One Bot' }
+                    author: { name: 'All In One Bot - Technical' }
                 });
 
                 // Command Pages for each category
